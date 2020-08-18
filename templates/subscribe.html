@@ -1,0 +1,24 @@
+      <div class="subscribe-popup" id="subscribe">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Subscribe</h1>
+            <p>Put your email below and relax-- whenever i'll post something you'll get personally notified by mail. </p>
+
+            <form action="#" class="subscribe-form">
+                <input type="text" class="inp-field" placeholder="Email"> <br>
+                <button class="subscribe-btn">Subscribe</button>
+            </form>
+    
+            <p>No spam. Unsubscribe anytime!</p>
+
+        </div>
+    </div>
+
+
+    <script>
+        function togglePopup(){
+            document.getElementById("subscribe").classList.toggle("active");
+        }
+    </script>
+  

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} home {% endblock %}
+
+{% block body %} 
+
+ 
+
+<main>
+
+    <div class="latest-post">
+
+         {% for post in post %}
+            <div class="post">
+                <h1 class="post-title">{{post.title}}</h1>
+                <span class="post-date">{{post.timestamp|date:"M d Y"}}</span>
+                <!-- {% for cat in post.label.all %}
+                    <span id="label">{{cat}} </span>
+                {% endfor %} -->
+                <p class="post-body">{{post.content | safe | truncatechars:150}}</p>
+                <a href="{{post.slug}}" class="post-read">continue reading</a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}" id="pagelink"><i class="fa fa-fw fa-arrow-left"></i> </a>
+        {% endif %}
+
+        {% for i in paginator.page_range %}
+            <a href="?page={{ i }}" id="pagelink"> {{i}} </a>
+        {%  endfor %} 
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" id="pagelink"> <i class="fa fa-fw fa-arrow-right"></i> </a>
+        {% endif %}
+    </div>
+
+
+</main>
+
+{% endblock %}

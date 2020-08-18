@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} {{read.title}} {% endblock %}
+
+{% block body %} 
+
+    <main class="col-8">
+
+        <div class="post-head-read">
+            <h1 id="note-title">{{read.title}}</h1>
+            <span class="post-date">{{read.timestamp|date:"M d Y"}}</span> 
+            <!-- {% for cat in read.label.all %}
+            <span id="label">{{cat}} </span> 
+            {% endfor %} -->
+            
+        </div>
+
+        <div class="post-body-read">
+
+            <p> {{ read.content | safe }} </p>
+
+            <br>
+         
+            <a style="cursor: pointer; color: rgb(68, 68, 148);" onclick="togglePopup()">Subscribe to Sachin</a>
+          
+        </div>
+
+    
+    </main>
+
+
+{% endblock %}
+

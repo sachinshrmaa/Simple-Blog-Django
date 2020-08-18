@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} login {% endblock %}
+
+{% block body %} 
+
+
+
+    <main>
+        <div class="form">
+
+            <h2 id="head-title">login</h2>
+
+            <form method="POST" id="login-form">
+
+                {% if user.is_authenticated %}
+                
+                    <hp>you are logged in! <a href="/logout">logout</a></p>
+
+                {% else %}
+
+                    {% csrf_token %}
+
+                    {{form.as_p}}
+
+                    <input type="submit" value="login" id="submit-btn">
+
+                {% endif %}
+
+                <!-- <input type="text" id="inp-field" placeholder="username"><br>
+                <input type="password" id="inp-field" placeholder="password"><br> -->
+
+               
+                <!-- <p>new to notes? <a href="/accounts/signup/">create an account</a></p> -->
+            </form>
+           
+        </div>
+    </main>
+
+{% endblock %}

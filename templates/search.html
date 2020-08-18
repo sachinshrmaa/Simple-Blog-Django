@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} search {% endblock %}
+
+{% block body %} 
+
+  
+
+    <main class="col-8">
+
+        {% if results%}
+        
+        <div class="search-results">
+
+            <h2 id="head-title">Search results...</h2>
+
+            {% for obj in results %}
+
+            <div class="post">
+                <h1 class="post-title">{{obj.title}}</h1>
+                <span class="post-date">{{obj.timestamp | date:"M d Y"}}</span>  
+                    <!-- {% for cat in obj.label.all %}
+                    <span id="label">{{cat}} </span>
+                    {% endfor %} -->
+                <p class="post-body"> {{obj.content | safe |truncatechars:150}} </p>
+                 
+                <a class="post-read" href="/{{obj.slug}}">continue reading</a>&nbsp;
+                
+            </div>
+
+            {% endfor %}
+
+          
+
+        {% else %}
+
+            <div class="no-search-found">
+                <div class="no-pinned-notes">
+                    <img src="{% static 'img/big-shoes.png' %}" id="no-search-img" loading="/lazy" alt="no pinned notes">
+                    <h2>oops! no search found</h2>
+		   <p>try a similar word or something more general</p>
+                </div>
+            </div>
+
+        {% endif %}
+
+       
+
+    
+    
+
+    </main>
+
+   
+    
+
+
+{% endblock %}

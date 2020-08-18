@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {% endblock %} - Sachin</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+
+            <a href="/" class="logo">Sachin</a>
+           
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa fa-fw fa-bars" id="bars"></i>
+            </label>
+
+            <form action="/search" class="search-form">
+                <input type="text" class="search-bar" placeholder="Search" name="q">
+                <button class="search-btn">Search</button>
+            </form>
+
+            <ul class="nav-links">
+                <li><a class="nav-item" href="/">Home</a></li>
+                <li><a class="nav-item" href="/archive">Archive</a></li>
+                <li><a class="nav-item" href="https://twitter.com/SachinShrmaa">Twitter</a></li>
+                <li><a class="nav-item-btn" onclick="togglePopup()">Subscribe</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    {% block body %} {% endblock %}
+
+    {% include "subscribe.html" %}
+
+    <footer class="footer">
+      <span class="footer-script"> Made by <a href="https://twitter.com/sachinshrmaa">Sachin</a> with <i class="fa fa-fw fa-heart"></i> in India</span>
+    </footer>
+
+
+
+</body>
+</html>

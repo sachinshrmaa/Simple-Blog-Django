@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} home {% endblock %}
+
+{% block body %} 
+
+ 
+
+<main class="col-8">
+
+    <div class="archive-post">
+        <h2 style="padding-top: 50px;">Posts</h2>
+        {% for post in post %}
+            <h3><a href="/{{post.slug}}" class="post-read">{{post.title}}</a></h3>         
+        {% endfor %}
+    </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,423 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.col-8{
+    max-width: 900px;
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+
+ /* navbar */
+        nav{
+            background-color: #fff;
+            box-shadow: 0 .15rem 1.75rem 0 rgba(155, 151, 151, 0.15);
+        }
+
+        .navbar {
+            height: 60px;
+            display: flex;
+            max-width: 1000px;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* logo brand and ham burger bar */
+
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-decoration: none;
+            color: rgb(68, 68, 148);
+        }
+
+        #check {
+            display: none;
+        }
+
+        #bars {
+            font-size: 20px;
+            padding: 20px;
+            cursor: pointer;
+            display: none;
+            color: rgb(68, 68, 148);
+        }
+
+        /* search form */
+
+        .search-form {
+            padding: 9px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .search-bar {
+            height: 30px;
+            border: 0;
+            border-radius: 2px;
+            padding: 0 10px;
+            width: 250px;
+            background-color: #f0efef;
+            color: #2b2b2b;
+        }
+
+        .search-btn {
+            height: 32px;
+            background-color: rgb(68, 68, 148);
+            border: 0;
+            color: #fff;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 0 15px;
+            font-weight: 600;
+        }
+
+        /* navigations links aka ul */
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: rgb(68, 68, 148);
+        }
+
+        .nav-item-btn {
+            padding: 9px 15px;
+            background-color: rgb(68, 68, 148);
+            border: 0px;
+            border-radius: 3px;
+            font-size: 15px;
+            color: #fff !important;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* POST CARD */
+        .latest-post{
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .post{
+            padding: 10px;
+        }
+
+        .post-title{
+            color: #444444;
+        }
+
+        .post-date{
+            color: rgb(151, 151, 151);
+            font-size: 14px;
+        }
+
+        .post-body{
+            color: rgb(100, 100, 100);
+        }
+
+        .post-read{
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* PAGINATOR */
+        .pagination{
+            height: 50px;
+            text-align: center;
+        }
+
+        #pagelink{
+            text-decoration: none;
+            padding:5px;
+            margin:2px;
+            font-size: 13px;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+
+        }
+
+        .post-head-read{
+            padding: 50px 0 10px 0;
+        }
+
+        .post-body-read{
+            padding-bottom: 50px;
+        }
+
+
+
+
+/* login page */
+
+.form{
+    height: 300px;
+    text-align: center;
+    padding: 120px 0;
+}
+
+#login-form{
+    height: 300px;
+    text-align: center;
+}
+
+
+#id_username, #id_password{
+    height: 40px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #2b2b2b;
+    background-color: transparent;
+}
+
+#submit-btn{
+    height: 40px;
+    width: 150px;
+    background-color: #22bb;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #efefef;
+}
+
+
+        /* FOOTER CSS */
+
+        .footer{
+            height:40px ;
+            padding-top: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+            box-shadow: 0 .15rem 1.75rem 0 rgba(155, 151, 151, 0.15);
+        }
+
+        .footer-script{
+            font-size: 14px;
+        }
+
+
+
+/* note read page */
+
+/* search page */
+
+.search-results{
+    padding: 40px;
+    height: auto;
+    min-height: 100vh;
+}
+
+.no-search-found{
+    height: 800px;
+}
+
+#no-search-img{
+    width: 500px;
+    padding-top: 140px;
+    height: auto;
+}
+
+
+
+/* SUBSCRIBE POPUP */
+ .subscribe-popup .overlay{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background-color: #efefef;
+            z-index: 1;
+            display: none;
+        }
+
+        .subscribe-popup .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background-color: #fff;
+            width: 60%;
+            height: 400px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .content p{
+            width: 70%;
+            margin: auto;
+        }
+
+        .subscribe-popup .close-btn{
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(68, 68, 148);
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .subscribe-popup.active .overlay{
+            display: block;
+        }
+
+        .subscribe-popup.active  .content{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .subscribe-form{
+            padding:30px 0;
+        }
+
+        .inp-field{
+            height: 40px;
+            width: 300px;
+            padding: 0 10px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+
+        .subscribe-btn{
+            margin-top: 10px;
+            height: 40px;
+            width: 300px;
+            border-radius: 3px;
+            background-color: rgb(68, 68, 148);
+            color: #ffe;
+            border: 0px;
+            font-weight: 600;
+        }
+
+
+
+
+/* mobile responsive view */
+@media (max-width: 800px) {
+            body{
+                padding: 0;
+            }
+            .logo {
+                margin: 20px 60px;
+                position: absolute;
+            }
+
+            .navbar {
+                display: block;
+                width: 100%;
+            }
+
+            .nav-links {
+                padding: 10px;
+                display: none;
+                height: 200px;
+                background-color: #fff;
+                margin: 0;
+                position: absolute;
+                transition: all 0.2s;
+                width: 100%;
+            }
+
+            .search-form {
+                background-color: #fff;
+                padding: 10px;
+                margin: 0;
+                display: none;
+                position: relative;
+                transition: all 0.2s;
+            }
+
+            .search-bar {
+                width: 70%;
+            }
+
+            .search-btn {
+                width: 20%;
+            }
+
+            .nav-links li a {
+                line-height: 45px;
+            }
+
+            #bars {
+                display: block;
+            }
+
+            .nav-links li {
+                display: block;
+            }
+
+            #check:checked~.nav-links {
+                display: block;
+            }
+
+            #check:checked~.search-form {
+                display: block;
+            }
+
+            /* Latest post */
+            .latest-post{
+                width: 90%;
+            }
+
+            .post-title{
+                font-size: 22px;
+            }
+
+   
+    /* search page */
+
+    .search-results{
+        padding: 10px;
+        height: 800px;
+    }
+
+    #no-search-img{
+        width: 95%;
+        height: auto;
+    }
+
+
+    /* SUBSCRIBE POPUP */
+    .subscribe-popup .content{
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    .inp-field, 
+    .subscribe-btn{
+        width: 80%;
+    }
+        
+    
+}
