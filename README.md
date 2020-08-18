@@ -1,6 +1,14 @@
 # Simple blog - Django
-This is a simple blog repo build in Django, Python, HTML, CSS and JS
+This repo is all about my website which is build with Django framework, Python, HTML, CSS and JS.
 
-To run this app on your computer, make sure to install all the required libraries, which  I've add in the requiremnets.txt file.
+## Usuage 
+Feel free to use it for your personal or professional use, it would be great if you somewhere mention my name.
 
-Feel free to fork and make  changes, and I'd love to hear from you at twitter: @sachinshrmaa
+## Support 
+I would love it if you support my work on [Patreon](https://www.patreon.com/sachinshrmaa).
+
+## Contact 
+Feel free to reach out to me for any queries or suggestions, or send me a tweet on twitter @sachinshrmaa
+
+mail: contact@sachinshrmaa.com
+website: https://sachinshrmaa.com/
